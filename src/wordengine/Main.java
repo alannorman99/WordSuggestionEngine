@@ -17,5 +17,7 @@ public class Main {
 
     System.out.println(reader.fileWords.size());
 
+    BiGram biGram = new BiGram(reader.fileWords);
+
   }
 }

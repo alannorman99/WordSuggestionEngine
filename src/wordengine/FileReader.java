@@ -36,7 +36,7 @@ class FileReader {
         .flatMap(Arrays::stream)
         .collect(Collectors.toList());
 
-    fileWords.forEach(System.out::println);
+    //fileWords.forEach(System.out::println);
   }
 
 }
