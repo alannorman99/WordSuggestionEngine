@@ -18,13 +18,20 @@ public class Main {
 
     System.out.println(reader.fileWords.size());
 
+reader.minimalWords(reader.fileWords);
+
     BiGram biGram = new BiGram(reader.fileWords);
 
-    Scanner scanner = new Scanner(System.in);  // Create a Scanner object
+    /*Scanner scanner = new Scanner(System.in);  // Create a Scanner object
     System.out.println("Enter Message");
 
     String userName = scanner.nextLine();  // Read user input
-    System.out.println("Message is: " + userName);  // Output user input
+    System.out.println("Message is: " + userName);  // Output user input*/
+
+
+    AffinityAnalysis AA = new AffinityAnalysis(biGram);
+
+
 
   }
 }

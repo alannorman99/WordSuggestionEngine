@@ -9,7 +9,7 @@ import java.util.Set;
 
 class BiGram {
 
-  private Map<Set<String>, Integer> bgrams = new HashMap<>();
+  Map<HashSet<String>, Integer> bgrams = new HashMap<>();
 
   BiGram(List<String> fileWords) {
 
@@ -21,7 +21,7 @@ class BiGram {
       // We just combined the shuffle & reduce in the same step
     }
 
-    bgrams.forEach((key, value) -> System.out.println(key + ", " + value));
+   // bgrams.forEach((key, value) -> System.out.println(key + ", " + value));
   }
 
 }
