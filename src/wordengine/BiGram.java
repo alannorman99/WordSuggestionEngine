@@ -21,7 +21,7 @@ class BiGram {
       // We just combined the shuffle & reduce in the same step
     }
 
-   // bgrams.forEach((key, value) -> System.out.println(key + ", " + value));
+    // bgrams.forEach((key, value) -> System.out.println(key + ", " + value));
   }
 
 }

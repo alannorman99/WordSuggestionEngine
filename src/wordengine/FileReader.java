@@ -18,7 +18,7 @@ class FileReader {
 
   private String filePath;
 
-  List<String> fileWords;
+  static List<String> fileWords;
   static ArrayList<String> words = new ArrayList<>();
 
   /**
@@ -42,12 +42,12 @@ class FileReader {
         .flatMap(Arrays::stream)
         .collect(Collectors.toList());
 
-   // fileWords.forEach(System.out::println);
+    // fileWords.forEach(System.out::println);
   }
 
   public void minimalWords(List<String> fileWords) {
-    for(String word : fileWords) {
-      if(words.contains(word)){
+    for (String word : fileWords) {
+      if (words.contains(word)) {
         continue;
       }
       words.add(word);

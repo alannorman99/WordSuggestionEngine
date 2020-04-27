@@ -16,21 +16,19 @@ public class Main {
         + "\\src\\wordengine\\messages.txt";
     FileReader reader = new FileReader(path);
 
-    System.out.println(reader.fileWords.size());
+    System.out.println(FileReader.fileWords.size());
 
-reader.minimalWords(reader.fileWords);
+    reader.minimalWords(FileReader.fileWords);
 
-    BiGram biGram = new BiGram(reader.fileWords);
+    BiGram biGram = new BiGram(FileReader.fileWords);
 
-    /*Scanner scanner = new Scanner(System.in);  // Create a Scanner object
+    Scanner scanner = new Scanner(System.in);  // Create a Scanner object
     System.out.println("Enter Message");
 
     String userName = scanner.nextLine();  // Read user input
-    System.out.println("Message is: " + userName);  // Output user input*/
+    System.out.println("Message is: " + userName);  // Output user input
 
-
-    AffinityAnalysis AA = new AffinityAnalysis(biGram);
-
+    AffinityAnalysis affinityAnalysis = new AffinityAnalysis(biGram);
 
 
   }
